@@ -1,17 +1,13 @@
 def main():
     # escribe tu código abajo de esta línea
-    palabras = int(input("Dame el número de palabras: "))
-    paginas = 1
-    if palabras < 475:
-        paginas = 1
-        costo = (paginas*60)*0.9
-        print("El costo de la publicación es:", costo)
-    else:
-             palabras > 475
-             paginas = 2
-             costo = (paginas*60)*0.9
-             print("El costo de la publicación es:", costo)
-
+    palabras = float(input("Dame el número de palabras: "))
+    b = (palabras//475)*60
+    c = palabras%475
+    if 1<=c:
+        d=60
+    x = (b+d)
+    total = (x-(x*10/100))
+    print("El costo de la publicación es:", total)
 
 if __name__ == '__main__':
     main()
